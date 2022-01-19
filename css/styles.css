@@ -8,7 +8,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -26,17 +26,24 @@ h6,
 p {
   margin: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* Утилиты */
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 1200px;
   /* outline: 2px solid green; */
 }
 .section {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
   /* outline: 2px solid magenta; */
 }
 
@@ -57,6 +64,10 @@ p {
 
 /* Оформление header */
 
+.header {
+  padding: 0;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -64,7 +75,6 @@ p {
 
 .main-nav {
   display: flex;
-  padding: 24px 0;
   align-items: center;
   border-bottom: 1px solid #ECECEC;
 }
@@ -112,6 +122,10 @@ p {
   color: var(--text-color);
 }
 
+.current {
+  color: var(--accent-color)
+}
+
 .nav-item:hover,
 .nav-item:focus,
 .contact-item:hover,
@@ -137,7 +151,8 @@ p {
   width: 1600px;
   height: 252px;
   margin: auto;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-bg-color);
 }
 
@@ -171,7 +186,8 @@ p {
   width: 1600px;
   height: 600px;
   margin: auto;
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -240,7 +256,6 @@ p {
 .works-title,
 .team-title {
   color: var(--title-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -279,7 +294,6 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 30px;
 }
 
 .team-prof {
@@ -289,7 +303,7 @@ p {
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 30px;
+
 }
 
 .works-item:nth-child(n + 2) {
@@ -300,14 +314,18 @@ p {
   margin-left: 30px;
 }
 
+.team-thumbs {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
 /* ОФОРМЛЕНИЕ СТРАНИЦЫ ПОРТФОЛИО */
 
 /* Меню */
 
 .projects-menu {
   display: flex;
-  padding: 0;
-  margin: 0;
   justify-content: center;
 }
 
@@ -343,11 +361,10 @@ p {
 
 .projects-name {
   color: var(--title-color);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 20px 24px 4px 24px;
+  /* margin: 20px 24px 4px 24px; */
 }
 
 .projects-prof {
@@ -355,7 +372,7 @@ p {
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.03em;
-  margin: 4px 24px 20px 24px;
+  /* margin: 4px 24px 20px 24px; */
 }
 
 .projects-list {
@@ -365,11 +382,9 @@ p {
 }
 
 .projects-item {
-  /* flex-basis: calc((100% - 60px) / 3); */
-  width: calc((100% - 60px) / 3);
-  height: 404px;
-  border: 1px solid #EEEEEE;
+  width: calc((100% - 90px) / 3);
   margin-right: 30px;
+  border: 1px solid #EEEEEE;
 }
 
 .projects-item:nth-child(3n) {
@@ -379,3 +394,8 @@ p {
 .projects-item:nth-child(n+4) {
   margin-top: 30px;
 }
+
+.projects-thumbs {
+  margin: 20px 24px;
+}
+
