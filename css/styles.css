@@ -32,19 +32,21 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Утилиты */
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1200px;
-  /* outline: 2px solid green; */
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* outline: 2px solid magenta; */
 }
 
 .visually-hidden {
@@ -65,7 +67,8 @@ img {
 /* Оформление header */
 
 .header {
-  padding: 0;
+  padding: 24px 0;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
@@ -76,7 +79,6 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ECECEC;
 }
 .nav-list {
   display: flex;
@@ -148,7 +150,7 @@ img {
 }
 
 .footer {
-  width: 1600px;
+  max-width: 1600px;
   height: 252px;
   margin: auto;
   padding-top: 60px;
@@ -183,7 +185,7 @@ img {
 .hero {
   text-align: center;
   background-color: var(--footer-bg-color);
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin: auto;
   padding-top: 200px;
@@ -191,17 +193,18 @@ img {
 }
 
 .hero-title {
+  width: 700px;
+  margin: 0 auto;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-btn {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   margin-top: 30px;
   font-family: Roboto;
@@ -211,10 +214,13 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  cursor: pointer;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.hero-btn:hover {
+  background-color: #188CE8;
 }
 
 /* Оформление Skills */
@@ -315,9 +321,7 @@ img {
 }
 
 .team-thumbs {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 0 10px;
+  padding: 30px 10px;
 }
 
 /* ОФОРМЛЕНИЕ СТРАНИЦЫ ПОРТФОЛИО */
@@ -327,6 +331,7 @@ img {
 .projects-menu {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .projects-btn {
@@ -340,7 +345,6 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
-  cursor: pointer;
 }
 
 .projects-btn:hover,
@@ -364,7 +368,6 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  /* margin: 20px 24px 4px 24px; */
 }
 
 .projects-prof {
@@ -372,30 +375,28 @@ img {
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.03em;
-  /* margin: 4px 24px 20px 24px; */
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 34px;
+  margin: -15px;
 }
 
 .projects-item {
-  width: calc((100% - 90px) / 3);
-  margin-right: 30px;
+  width: 370px;
+  margin: 15px;
   border: 1px solid #EEEEEE;
 }
 
-.projects-item:nth-child(3n) {
+.projects-thumbs {
+  padding: 20px 24px;
+}
+
+/* .projects-item:nth-child(3n) {
   margin-right: 0;
 }
 
 .projects-item:nth-child(n+4) {
   margin-top: 30px;
-}
-
-.projects-thumbs {
-  margin: 20px 24px;
-}
-
+} */
